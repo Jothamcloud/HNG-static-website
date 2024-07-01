@@ -34,23 +34,6 @@ This project includes a simple static website with the following content:
    sudo yum install httpd -y
    sudo systemctl start httpd
    sudo systemctl enable httpd
-	3.	Create the HTML File:
-3. **On your EC2 instance, create an HTML file in the Apache document root:
 
-echo '<html>
-<head>
-    <title>My Website</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Name: Arinze Jotham</p>
-    <p>Username: Majestic</p>
-    <p>Email: ArinzeJotham60@gmail.com</p>
-    <p>This website is part of the HNG Internship. For more information, visit <a href="https://hng.tech">HNG Internship</a>.</p>
-</body>
-</html>' | sudo tee /var/www/html/index.html
-
-##Viewing the Website
-
-To view the website, navigate to the public IP address or public DNS of your EC2 instance in your web browser.
-
+3. ** Create the HTML File Using Echo:**
+   echo 'Your HTML code' | sudo tee /var/www/html/index.html
