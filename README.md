@@ -35,5 +35,6 @@ This project includes a simple static website with the following content:
    sudo systemctl start httpd
    sudo systemctl enable httpd
 
-3. ** Create the HTML File Using Echo:**
+3. **Create the HTML File Using Echo:**
+   ```sh
    echo 'Your HTML code' | sudo tee /var/www/html/index.html
